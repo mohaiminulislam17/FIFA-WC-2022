@@ -1,0 +1,308 @@
+html{
+
+    background-image: url("../images/background.jpg");
+    background-size:contain;
+   }
+
+
+
+/* font-face rule */
+p {
+    font-family: sans-serif;
+    
+}
+/* body style of all the page */
+
+
+/*  Header style  */
+
+header {
+   
+    margin: auto;
+    position: fixed;
+    width: 1197px;
+    top: 0;
+    border: 4px solid  black;
+    font-family: sans-serif;
+    height: 160px;
+    background-image: linear-gradient(35deg, white, red,green, red, white);
+
+}
+/* Logo image style */
+
+header img {
+
+    width: 80px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    /* border: 2px solid red; */
+    /* padding: 12px; */
+} 
+
+/*  Main nav bar style  */ 
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+   
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    margin: -5px; 
+    font-size: 25px;
+    
+}
+
+
+header nav ul li a {
+    color: black;
+    font-style: bold;
+     text-decoration: none;
+    position: relative;
+    text-align: left;
+    
+}
+header nav ul li a:hover{
+    color: lightgray;
+    
+}
+header h3{
+    
+    left: 124px; 
+    font-style: normal;
+}
+
+/*  Body style  */ 
+
+body{
+    width: 1200px;
+    
+    margin: auto;
+    padding: auto;
+   
+    background-image: url("../images/field2.jpg");
+    box-shadow: 5px 5px 10px 10px black; 
+
+}
+main{
+    margin-top: auto;
+    padding-top: 180px;
+    width: 1200px;
+    border: 4px solid  black;
+   
+    
+}
+.T{
+    color: rgb(198, 169, 169);
+    
+}
+section.nations h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+section.nations h2{
+    color: aliceblue;
+    text-align: left;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+section.nations p{
+    color: aliceblue;
+    text-align:left;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+section.nations h3{
+    color: aliceblue;
+    text-align:left;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+section.nations ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+    
+    padding: 0;
+    margin: 5px;
+}
+section.nations ul li {
+   
+    display: inline;
+    list-style-type: none;
+    text-decoration-line: underline;
+    
+    margin-left: 15px;
+    
+    font-size: 15px;
+    
+    
+}
+
+section.nations ul li a{
+    color: silver;
+    font-style: bold;
+     text-decoration: double;
+    margin-left: -5px;
+    text-align: left;
+    font-size: 25px;
+    
+}
+section.nations ul li a:hover{
+    color: red;
+    
+}
+
+/*  grid section  style  */ 
+
+section.grid {
+
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto; 
+    margin: 12px;
+    margin-top: 10px;
+    column-gap: 10px;
+    
+   
+    height: auto;
+ }
+
+ section.grid .grid-item {
+
+    border: 1px solid wheat;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    height: auto;
+    border-radius: 5px;
+    background-color:rgb(186, 211, 149);
+ }
+ 
+section#pic img{
+    border-radius: 5px;
+    height: 180px;
+}
+/*  Footer style  */
+
+footer {
+    
+    background-image: linear-gradient(35deg, white, red,green, red, white);
+    border: 3px solid  black;
+  
+    position: static;
+    bottom: 20px;
+    
+
+}
+footer p{
+    text-align: center;
+    font-size: 25px;
+    padding: 0px;
+    color: antiquewhite;
+   
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+  
+    header{
+        height: auto;
+        width: 100%;
+    }
+    header nav ul {
+
+        flex-direction: column;
+        align-content:stretch;
+
+        /*justify-content: space-between;*/
+    }
+    header nav ul li{
+        margin: 1px;
+        font-size: 25px;
+        font-style: italic;
+         
+
+    }
+    header h1, h3{
+        font-size: 25px;
+        position: static;
+        text-align: left;
+        top: 0;
+          
+    }
+    body{
+        width: fit-content;
+        background-color: rgb(143, 183, 199);
+        font-size:15px;
+        border: rgb(115, 115, 190);
+    }
+   
+   
+
+    body main{
+        
+        background-color: rgb(105, 156, 105);
+        font-size:10px;
+        border: rgb(115, 115, 190);
+        margin-left: auto;
+        margin-top: 80px;
+        margin-right: auto;
+        width: 780px;
+        font-style: italic;
+       
+        
+    }
+   
+    section.nations h1{
+
+        font-size: 25px;
+        text-align: left;
+        margin-left: 15px;
+}
+section.nations h2{
+
+    font-size: 25px;
+}
+section.nations h3{
+
+    font-size: 25px;
+}
+section.nations p{
+    text-align: justify;
+}
+section.grid{
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; 
+    margin: 12px;
+    margin-top: 10px;
+    column-gap: 10px;  
+}
+section.grid .grid-item{
+    font-size: 15px;
+}
+
+}

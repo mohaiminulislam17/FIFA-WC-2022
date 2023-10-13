@@ -1,0 +1,319 @@
+html{
+
+    background-image: url("../images/background.jpg");
+    background-size:contain;
+    
+   }
+
+
+
+/* font-face rule */
+p {
+    font-family: sans-serif;
+    
+}
+
+
+
+/*  Header style  */
+
+header {
+   
+    margin: auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border: 4px solid  black;
+    font-family: sans-serif;
+    height: 150px;
+    background-image: linear-gradient(35deg, white, red,green, red, white);
+
+}
+
+/* Logo image style */
+
+header img {
+
+    width: 80px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    /* border: 2px solid red; */
+    /* padding: 12px; */
+} 
+
+/*  Main nav bar style  */ 
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+   
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    margin: -5px; 
+    font-size: 25px;
+    
+}
+
+
+header nav ul li a {
+    color: black;
+    font-style: bold;
+     text-decoration: none;
+    position: relative;
+    text-align: left;
+    
+}
+header nav ul li a:hover{
+    color: lightgray;
+    
+}
+header h3{
+    
+    left: 124px; 
+    font-style: normal;
+}
+.S{
+    color: rgb(198, 169, 169);
+    
+}
+
+/* body style  */
+body{
+    width: 1200px;
+    margin: auto;
+    padding: auto;
+    
+    background-image: url("../images/field2.jpg");
+    box-shadow: 5px 5px 10px 10px black; 
+
+}
+body main{
+    border: 3px solid black;
+    color: white;
+}
+
+
+section#glr {
+
+    
+    margin-left: 10px;
+    margin-right: 80px;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: justify;
+   
+}
+
+section#glr img {
+
+    width: 600px;
+    height: 300px;
+}
+
+/* styling of the first image */
+section#glr img:first-of-type{
+    width: 1175px;
+    height: 600px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+section#glr img:nth-of-type(2){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(3){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(4){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(5){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(6){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(7){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(8){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(9){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+section#glr img:nth-of-type(10){
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+/* style of all table of the page */
+table {
+    margin-top: 10px;
+}
+
+table, th, td {
+    padding: 5px;
+    border: 4px solid rgb(154, 213, 154);
+   
+    
+  }
+  /* footer style of  the page */
+
+  footer {
+    
+    background-image: linear-gradient(35deg, white, red,green, red, white);
+    border: 3px solid  black;
+    
+    position: static;
+    bottom: 20px;
+    
+
+}
+
+footer p{
+    text-align: center;
+    font-size: 25px;
+    padding: 0px;
+    color: antiquewhite;
+   
+}
+
+/* for media compatible styling */
+
+@media only screen and (max-width: 800px) {
+    
+  
+    header{
+        height: 250px;
+        width: auto;
+    }
+    header nav ul {
+
+        flex-direction: column;
+        align-content:stretch;
+
+        /*justify-content: space-between;*/
+    }
+    header nav ul li{
+        margin: 1px;
+        font-size: 25px;
+        font-style: italic;
+         
+
+    }
+    h1, h3{
+        font-size: 25px;
+        position: static;
+        text-align: left;
+        top: 0;    
+    }
+    body{
+        width: fit-content;
+        background-color: rgb(143, 183, 199);
+        font-size:15px;
+        border: rgb(115, 115, 190);
+    }
+    section#glr h1{
+        font-style: italic;
+        color:  white;
+        font-size: 30px;
+    }
+    body main{
+        
+        
+        margin-left: auto;
+        
+        margin-right: auto;
+        width: 900px;
+        font-style: italic;
+        text-align: justify;
+        
+    }
+    section#glr img:first-of-type{
+        width: 680px;
+        height: 500px;
+    
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    section#glr img:nth-of-type(2){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    table {
+        font-size: 15px;
+    }
+    section#glr img:nth-of-type(3){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    section#glr img:nth-of-type(4){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    section#glr img:nth-of-type(5){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    section#glr img:nth-of-type(6){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    section#glr img:nth-of-type(7){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    section#glr img:nth-of-type(8){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    section#glr img:nth-of-type(9){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    section#glr img:nth-of-type(10){
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    
+  } 
+
+  
+
+  
